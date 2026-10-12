@@ -1,0 +1,11 @@
+{
+  "name": "tank",
+  "private": true,
+  "description": "90s tank game: C++ → WebAssembly + WebGL2",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "emcmake cmake -S . -B build-web && cmake --build build-web",
+    "start": "node server/server.mjs",
+    "test:server": "node --test server/test/server.test.mjs"
+  }
+}
